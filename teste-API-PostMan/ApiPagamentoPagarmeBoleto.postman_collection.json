@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "cdf7055d-c0ac-4aeb-b83d-0a99cb7898fd",
+		"name": "ApiPagamentoPagarmeBoleto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CadastraPagamentoBoleto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ6QHJ6c2lzdGVtYXMuY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IlZOR0pocHFWWFVNPSIsIkFwbGljYXRpdm9EZUFjZXNzbyI6IkNvcnJlaW9zIiwidW5pcXVlX25hbWUiOiJSb2RyaWdvIiwiZmFtaWx5X25hbWUiOiJaaW1tZXJtYW5uIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy92ZXJzaW9uIjoiMTAwMCIsIm5hbWVpZCI6IjEiLCJDb2RFbXByZXNhIjoiMTI1NCIsIm5iZiI6MTU5MzU2MzA3OCwiZXhwIjoxNTkzNTYzNjc4LCJpYXQiOjE1OTM1NjMwNzh9.11TB7iIDwJtNlrh5d7tGoz7XyqfkWN6qnl19skpTXmc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"payment_method\": \"boleto\",\r\n    \"amount\": 500000, \r\n    \"versaoAPI\" : \"1000\",\r\n    \"capture\": true,\r\n    \"customer\":{\r\n        \"type\": \"individual\",\r\n        \"country\": \"br\",\r\n        \"name\": \"Daenerys Targaryen\",\r\n        \"documents\": [{\r\n            \"type\": \"cpf\",\r\n            \"number\": \"00000000000\"\r\n        }]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://virtualmarket.local:8081/apiPagamentoBoletoPagarMe/PagamentoBoleto/CadastraPagamentoBoleto",
+					"protocol": "http",
+					"host": [
+						"virtualmarket",
+						"local"
+					],
+					"port": "8081",
+					"path": [
+						"apiPagamentoBoletoPagarMe",
+						"PagamentoBoleto",
+						"CadastraPagamentoBoleto"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ6QHJ6c2lzdGVtYXMuY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IlZOR0pocHFWWFVNPSIsIkFwbGljYXRpdm9EZUFjZXNzbyI6IkNvcnJlaW9zIiwidW5pcXVlX25hbWUiOiJSb2RyaWdvIiwiZmFtaWx5X25hbWUiOiJaaW1tZXJtYW5uIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy92ZXJzaW9uIjoiMTAwMCIsIm5hbWVpZCI6IjEiLCJDb2RFbXByZXNhIjoiMTI1NCIsIm5iZiI6MTU5MzA4Mjc5NywiZXhwIjoxNTkzMDgzMzk3LCJpYXQiOjE1OTMwODI3OTd9.Mo1YXwz68wj5NndAz3C3UNQvatI7ayt_vvxXYogpjks",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}

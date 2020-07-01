@@ -1,0 +1,21 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://virtualmarket.local:8081/apiPagamentoBoletoPagarMe",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "Iniciar": {
+      "commandName": "ErrorProfile",
+      "ErrorString": "Additional text encountered after finished reading JSON content: }. Path '', line 21, position 0."
+    },
+    "IIS - BoletoPagarMe": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "launchUrl": "home"
+    }
+  }
+}

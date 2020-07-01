@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "50bJDyBVT6xCjrVxT20kY75/W4ZZlUckaBlBRIyrm0op2WMQDx65CqGfQ3TI9FqxIuGFCyD1sZLYE8sMUAZc0w==",
+  "success": true,
+  "projectFilePath": "C:\\VirtualMarket\\VirtualMarketCore\\apiPagamentoPagarMeBoleto\\VirtualMarket.apiPagamentoBoletoPagarMe.Entidades\\VirtualMarket.apiPagamentoBoletoPagarMe.Entidades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\upassos\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
